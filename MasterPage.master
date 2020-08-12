@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="CSS/MasterPage.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>  
+    <style type="text/css">
+        .auto-style1 {
+            width: 737px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="Wrapper">
+        <div id="Header">
+            <div id="Second-Header">
+                <div id="Logo">
+                    <a href="TrangChu.aspx"><img src="Image/Logo.png" style="height: 120px;width:400px;" /></a>
+                </div>
+                <div id="Account">
+                    <div id="Account-Box">
+                        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Image/Account.PNG" ToolTip="Tài Khoản" Height="50px" Width="70px" OnClick="ImageButton2_Click" />
+                        <%--<asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/Image/Cart.png" ToolTip="Giỏ Hàng" Height="50px" Width="70px" OnClick="ImageButton3_Click"/>--%>
+                    </div>
+                </div>     
+              
+            </div>
+            <div id="Third-Header">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" StaticDisplayLevels="2" StaticSubMenuIndent="1px" DataSourceID="SiteMapDataSource1"  ></asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                              
+            </div>
+        </div>    
+        <%--Phần thân--%>
+        <div id="Content">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                       
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="Footer">
+                <p>Đồ án Lập trình web</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

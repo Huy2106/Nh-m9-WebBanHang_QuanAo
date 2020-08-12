@@ -1,0 +1,132 @@
+﻿body {
+}
+#Wrapper{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#Header{
+    width:100%;
+    height:220px;
+    position: fixed;
+    z-index: 1;
+    top: -16px;
+    transition: top 0.3s;
+    left:0;
+    
+}
+        #Second-Header{
+            height:120px;
+            background-color:white;
+            padding:0;
+            margin:0;
+        }
+                    #Logo{
+                        width:30%;
+                        float:left;
+                        height:120px;
+                    }
+                    #Logo a{
+                            height: 100%;
+                            float:right;
+                            text-decoration: none;
+                    }
+                   
+                    #Account{
+                        width:29%;
+                        float:right;
+                        height:120px;
+                        border: none;
+                    }
+                        #Account-Box{
+                            height:50px;
+                            margin:37px 10px;
+                            border: none;
+                        }
+                        #ImageButton2{
+                            padding-left:40px;
+                            border: none;
+                        }
+                        #ImageButton3{
+                            padding-left:30px;
+                            border: none;
+                        }
+        #Third-Header{
+            height:50px;
+            background-color:black;
+            padding:0;
+            margin:0;
+        }
+            #Menu1{
+                margin:4px;
+                margin-left:30px;
+                
+            }
+            #Menu1 ul
+            {
+                margin:0;
+                padding:0;          
+            }
+            #Menu1 li
+            {
+                display:inline;                
+            }
+            #Menu1 a
+            {
+                display:block;
+                float:left;
+                margin:0;
+                width:150px;
+                height:20px;
+                text-align:center;
+                vertical-align:middle;
+                text-decoration:none;
+                font-weight:bold; 
+                padding:10px 10px;
+                color:white;
+                outline:none;
+            }    
+            #Menu1 a:hover 
+            {
+                color:#FFFFFF;
+                border-bottom: 1px solid #FFFFFF;
+            }
+            #Menu1 a:active, #Menu1 a.selected 
+            {
+                color:#ffd800;
+            }
+
+#Content{
+    width:100%;
+    float:left;
+    padding:10px;
+    margin:230px 0 0 0;
+    height:auto;
+}
+
+#Right{
+    width:15%;
+    float:right;
+    padding:10px;
+    margin:230px 0 0 0;
+    height:100%;
+    
+}
+
+#Footer{
+    width:100%;
+    clear:both;
+    background-color:black;
+    padding:0;
+    margin:0;
+    height:350px;
+    color:black;
+        border-top:2px solid black;
+        height:52px;
+        padding:0;
+        margin:0;
+        color:white;
+        text-align:center;
+        /*padding-top:15px;*/
+    }
